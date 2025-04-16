@@ -1,0 +1,3 @@
+/home/user/myapp/dart_torrent_handler/android/src/main/jni/build-arm64-v8a/CMakeFiles/torrent_handler.dir
+/home/user/myapp/dart_torrent_handler/android/src/main/jni/build-arm64-v8a/CMakeFiles/edit_cache.dir
+/home/user/myapp/dart_torrent_handler/android/src/main/jni/build-arm64-v8a/CMakeFiles/rebuild_cache.dir

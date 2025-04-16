@@ -1,0 +1,53 @@
+buildscript {
+    ext.kotlin_version = "2.0.20" // Latest as of April 2025 (hypothetical)
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:8.2.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+apply plugin: "com.android.library"
+apply plugin: "kotlin-android"
+
+android {
+    namespace "com.example.dart_torrent_handler"
+    compileSdk 35
+    ndkVersion "27.0.12077973"
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+
+    kotlinOptions {
+        jvmTarget = "11"
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs += "src/main/kotlin"
+            jniLibs.srcDirs += "src/main/jniLibs"
+        }
+    }
+
+    defaultConfig {
+        minSdk 21
+        targetSdk 35 // Updated to match example app
+    }
+
+    dependencies {
+        implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+        // libtorrent is included as prebuilt .so files in src/main/jniLibs
+    }
+}

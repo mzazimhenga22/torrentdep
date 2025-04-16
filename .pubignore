@@ -1,0 +1,28 @@
+publish_to: 'https://pub.dev'
+
+# Exclude native build directories
+android/src/main/jni/build-arm64-v8a
+android/src/main/jni/build-armeabi-v7a
+android/src/main/jni/build-x86
+android/src/main/jni/build-x86_64
+android/src/main/jni/CMakeCache.txt
+android/src/main/jni/CMakeFiles/
+android/src/main/jni/CMakeLists.txt.user
+
+# Exclude build output folders and system files
+build/
+.dart_tool/
+.idea/
+.DS_Store
+*.iml
+*.apk
+*.ipa
+*.zip
+*.log
+*.ninja
+*.o
+*.so
+*.bin
+*.txt
+*.lock
+packages/

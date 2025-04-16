@@ -1,0 +1,44 @@
+name: dart_torrent_handler
+description: A Dart package for torrent handling on Android and iOS.
+version: 1.0.0
+homepage: https://github.com/mzazimhenga22/dart_torrent_handler
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: '>=3.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  path: ^1.8.3
+  ffi: ^2.1.3
+  plugin_platform_interface: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  integration_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.example.dart_torrent_handler
+        pluginClass: DartTorrentHandlerPlugin
+      ios:
+        pluginClass: DartTorrentHandlerPlugin
+
+# Files and folders to exclude from the published package
+# Only specific paths allowed — no wildcards
+exclude:
+  - android/src/main/jni/build
+  - android/src/main/jni/CMakeCache.txt
+  - android/src/main/jni/CMakeFiles
+  - android/src/main/jni/CMakeLists.txt.user
+  - build
+  - .dart_tool
+  - .idea
+  - .DS_Store
+  - packages

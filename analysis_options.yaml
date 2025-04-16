@@ -1,0 +1,14 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  strong-mode:
+    implicit-casts: false
+    implicit-dynamic: false
+
+linter:
+  rules:
+    always_declare_return_types: true
+    prefer_single_quotes: true
+    avoid_empty_else: true
+    prefer_const_constructors: true
+    lines_longer_than_80_chars: false

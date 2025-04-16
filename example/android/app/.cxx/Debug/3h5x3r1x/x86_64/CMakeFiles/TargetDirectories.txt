@@ -1,0 +1,2 @@
+D:/flutter torrent dep/torrentdep/example/android/app/.cxx/Debug/3h5x3r1x/x86_64/CMakeFiles/edit_cache.dir
+D:/flutter torrent dep/torrentdep/example/android/app/.cxx/Debug/3h5x3r1x/x86_64/CMakeFiles/rebuild_cache.dir

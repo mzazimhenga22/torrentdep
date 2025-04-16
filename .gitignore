@@ -1,0 +1,89 @@
+# Environment variables
+.env
+.env.*
+
+# Miscellaneous
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+.history
+
+# macOS related
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata/
+*.xcodeproj/
+
+# Android related
+android/.gradle/
+android/local.properties
+android/.idea/
+android/app/debug/
+android/app/release/
+
+# Do NOT ignore native JNI files
+!android/app/src/main/jni/**
+!android/app/src/main/jniLibs/**
+!android/src/main/jni/**
+!android/src/main/jniLibs/**
+!android/**/CMakeLists.txt
+
+# iOS related
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.generated/
+ios/Runner.xcworkspace
+
+# Web related
+web/.dart_tool/
+
+# Windows related
+windows/.dart_tool/
+windows/build/
+
+# Linux related
+linux/.dart_tool/
+linux/build/
+
+# Fuchsia related
+fuchsia/.dart_tool/
+fuchsia/build/
+
+# Flutter/Dart/Pub related
+build/
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub/
+.pub-cache/
+.pubspec.lock
+**/doc/api/
+
+# IntelliJ related
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# VS Code
+.vscode/
+
+# Backup or temporary files
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# Custom exclusion
+libtorrent/
+
+# Files to check in even if ignored by default
+!android/app/src/main/jni/.gitkeep
+!android/app/src/main/jniLibs/.gitkeep
+!android/src/main/jni/.gitkeep
+!android/src/main/jniLibs/.gitkeep
